@@ -1,0 +1,92 @@
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  # TERM: xterm-256color
+  TERM: alacritty
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: true
+
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    #family: JetBrainsMono Nerd Font
+    #family: CaskaydiaCove Nerd Font
+    #family: Hasklug Nerd Font
+    family: Hack Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Regular
+    #weight: 600
+
+  #  The bold font face
+  bold:
+    family: Hack Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+    # The italic font face
+  italic:
+    family: Hack Nerd Font
+    # Style can be specified to pick a specific face.
+    # style: Regular
+  size: 11
+    
+cursor.style: Block   
+
+vi_mode_style: Underline   
+#vi_mode_style: Underline   
+
+# theme: Catppuccin
+# Live config reload (changes require restart)
+live_config_reload: true
+
+
+# Should display the render timer
+#debug.render_timer: false
+
+colors:
+  # Default colors
+  primary:
+    # background: '0x1E1D2F'
+    background: '0x11111B'
+    foreground: '0xD9E0EE'
+
+  cursor:
+    text: '0x1E1D2F'
+    cursor: '0xF5E0DC'
+
+  # Normal colors
+  normal:
+    black: '0x6E6C7E'
+    red: '0xF28FAD'
+    green: '0xABE9B3'
+    yellow: '0xFAE3B0'
+    blue: '0x96CDFB'
+    magenta: '0xF5C2E7'
+    cyan: '0x89DCEB'
+    white: '0xD9E0EE'
+
+  # Bright colors
+  bright:
+    black: '0x988BA2'
+    red: '0xF28FAD'
+    green: '0xABE9B3'
+    yellow: '0xFAE3B0'
+    blue: '0x96CDFB'
+    magenta: '0xF5C2E7'
+    cyan: '0x89DCEB'
+    white: '0xD9E0EE'
+
+  indexed_colors:
+    - { index: 16, color: '0xF8BD96' }
+    - { index: 17, color: '0xF5E0DC' }
+
+
+shell:
+  program: /bin/zsh 
